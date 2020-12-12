@@ -1,0 +1,28 @@
+@import url("https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css");
+@import url("https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+
+.customnav{
+  background-color: #000;
+
+}
+.custom1{
+  background-color: #e9c46a;
+}
+
+
+.cursive {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+}
+
+.prose img {
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+}
+
+.home-name {
+  font-size: 150px;
+}
+
