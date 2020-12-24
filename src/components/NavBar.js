@@ -5,19 +5,22 @@ import { SocialIcon } from "react-social-icons";
 export default function NavBar() {
   return (
     <header className="customnav">
-      <div className="container mx-auto flex justify-between">
-        <nav className="flex ">
+      <nav className="container mx-auto flex justify-between">
+        <div className="flex ">
+          <ul className="navbar-nav flex-row">
+
+         
           <NavLink
             to="/"
             exact
             activeClassName="text-white"
-            className="inline-flex items-center py-1 px-3 my-5 lg:text-3xl md:text-2xl text-l rounded text-red-200 hover:text-green-100"
+            className="inline-flex items-center py-1 px-3 my-5 lg:text-3xl md:text-2xl   rounded text-red-200 hover:text-green-100"
           >
             SIDDHANT DUGAR
           </NavLink>
           <NavLink
             to="/post"
-            className="inline-flex items-center py-1 px-3 my-5 rounded text-red-200 hover:text-green-100"
+            className="inline-flex items-center py-1 px-3 my-5  rounded text-red-200 hover:text-green-100"
             activeClassName="text-red-100 "
           >
             BLOG POSTS
@@ -36,8 +39,13 @@ export default function NavBar() {
           >
             ABOUT ME!
           </NavLink>
-        </nav>
-        <div className="inline-flex py-1 px-3 my-5">
+          </ul>
+          
+          <button className = "navbar-toggler" type = "buttton" data-toggle="collapse" data-target="#navbarNavDropdown">
+            <span className="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <div className="collapse navbar-collapse inline-flex py-1 px-3 my-5" id="navbarNavDropdown">
           <SocialIcon
             url="https://twitter.com/SiddhantDugar"
             className="mr-4"
@@ -67,7 +75,7 @@ export default function NavBar() {
             style={{ height: 35, width: 35 }}
           />
         </div>
-      </div>
+      </nav>
     </header>
   );
 }
