@@ -11,7 +11,7 @@ export default function NavBar() {
             to="/"
             exact
             activeClassName="text-white"
-            className="inflex-flex items-center py-6 px-3 mr-4 text-red-100 hover:text-green-100 text-4xl font-bold cursive tracking-widest"
+            className="inline-flex items-center py-3 px-3 my-6 lg:text-3xl md:text-2xl text-xl rounded text-red-200 hover:text-green-100"
           >
             SIDDHANT DUGAR
           </NavLink>
@@ -65,7 +65,7 @@ export default function NavBar() {
             target="_blank"
             fgColor="#fff"
             style={{ height: 45, width: 45 }}
-          />r
+          />
         </div>
       </div>
     </header>

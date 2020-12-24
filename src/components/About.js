@@ -27,9 +27,9 @@ export default function About() {
   if (!author) return <div>Loading...</div>;
 
   return (
-    <main className="relative">
-      <img src={plumeria} alt="Plumeria Flower" className="absolute w-full" />
-      <div className="p-10 lg:pt-48 container mx-auto relative">
+    <main className="relative custom2 min-h-screen responsive">
+      
+      <div className="p-10 lg:pt-48 container mx-auto responsive relative">
         <section className="custom1 rounded-lg shadow-2xl lg:flex p-20">
           <img
             src={urlFor(author.authorImage).url()}

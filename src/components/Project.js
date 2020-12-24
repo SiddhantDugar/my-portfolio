@@ -22,7 +22,7 @@ export default function Project() {
   }, []);
 
   return (
-    <main className="custom1 min-h-screen p-12">
+    <main className="custom1 min-h-screen p-12 responsive">
       <section className="container mx-auto">
         <h1 className="text-5xl flex justify-center cursive">My Projects</h1>
         <h2 className="text-lg text-gray-600 flex justify-center mb-12">
@@ -31,7 +31,7 @@ export default function Project() {
         <section className="grid grid-cols-2 gap-8">
           {projectData &&
             projectData.map((project, index) => (
-              <article className="relative rounded-lg shadow-xl bg-white p-16">
+              <article className="relative rounded-lg shadow-xl bg-white p-12">
                 <h3 className="text-gray-800 text-3xl font-bold mb-2 hover:text-red-700">
                   <a
                     href={project.link}
@@ -42,20 +42,20 @@ export default function Project() {
                     {project.title}
                   </a>
                 </h3>
-                <div className="text-gray-500 text-xs space-x-4">
+                <div className="text-gray-500 text-xs">
                   <span>
                     <strong className="font-bold">Finished on</strong>:{" "}
                     {new Date(project.date).toLocaleDateString()}
                   </span>
                   <span>
-                    <strong className="font-bold">Company</strong>:{" "}
+                    <strong className="font-bold"></strong>:{" "}
                     {project.place}
                   </span>
                   <span>
                     <strong className="font-bold">Type</strong>:{" "}
                     {project.projectType}
                   </span>
-                  <p className="my-6 text-lg text-gray-700 leading-relaxed">
+                  <p className="my-2 text-lg text-gray-700 leading-relaxed">
                     {project.description}
                   </p>
                   <a

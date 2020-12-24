@@ -4,13 +4,39 @@
 
 .customnav{
   background-color: #000;
-
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .custom1{
   background-color: #e9c46a;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+.custom2{
+  background-color: #0e5b88;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.image{
+  background-position: center center;
+  
 
-
+  background-repeat: no-repeat;
+  
+  /* Background image is fixed in the viewport so that it doesn't move when 
+     the content's height is greater than the image's height */
+  background-attachment: fixed;
+  
+  /* This is what makes the background image rescale based
+     on the container's size */
+  background-size: cover;
+}  
 .cursive {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
@@ -21,8 +47,11 @@
   margin-right: auto;
   border-radius: 5px;
 }
-
 .home-name {
-  font-size: 150px;
+  font-size: 20px;
 }
+.home-name1 {
+  font-size: 70px;
+}
+
 

@@ -3,16 +3,17 @@ import image from "../background.jpg";
 
 export default function Home() {
   return (
-    <main>
+    <main className="responsive">
       <img
         src={image}
         alt="Monstera Leaves"
-        className="absolute object-cover w-full h-full"
+        className="absolute image responsive w-full h-full"
       />
-      <section className="relative flex justify-center min-h-screen pt-12 lg:pt-64 px-8">
-        <h1 className="text-6xl text-green-100 font-bold cursive leading-none lg:leading-snug home-name">
-          Hi ! I'm SIDDHANT
-        </h1>
+      <section className="relative flex justify-center  pt-12  lg:pt-42 px-8">
+        
+        <h1 className="home-name1  align-middle text-white flex justify-center cursive"> <br></br>Hi ! I'm SIDDHANT</h1>
+         
+        
       </section>
     </main>
   );
